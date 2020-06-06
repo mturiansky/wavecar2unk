@@ -16,7 +16,7 @@ setup(
     long_description_content_type='text/markdown',
     url='https://github.com/mturiansky/wavecar2unk',
     packages=find_packages(),
-    install_requires=['pymatgen', 'click'],
+    install_requires=['pymatgen > 2020.4.29', 'click >= 7.1.2'],
     keywords=[
         'physics', 'materials', 'science', 'VASP', 'WAVECAR', 'wannier90'
     ],
