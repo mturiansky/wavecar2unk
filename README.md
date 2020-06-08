@@ -3,8 +3,10 @@
 # wavecar2unk
 
 Converts the VASP WAVECAR to UNK files for wannier90.
-Works for non-collinear WAVECARs also, which is needed for spin-orbit coupling in wannier90 >= v2.0.0.
-To use non-collinear calculations with wannier90, you need to enable support for v2.
+This works for non-collinear WAVECARs, which is needed for spin-orbit coupling in wannier90 >= v2.0.0.
+However, to use this code, the full k-point grid needs to be contained in the WAVECAR file (i.e., you should run a nscf calculation with ISYM=-1 or already include the tag as recommended in the case of spin-orbit coupling).
+To use non-collinear calculations with wannier90, you need to enable support for v2 in VASP.
+The steps are as follows:
 1. [Install](#Installation) wavecar2unk using `pip`.
 2. Apply the patch `mlwf.patch` from [Chengcheng-Xiao/VASP2WAN90_v2_fix](https://github.com/Chengcheng-Xiao/VASP2WAN90_v2_fix). E.g.,
 ```
