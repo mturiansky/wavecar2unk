@@ -8,6 +8,9 @@ import click
 from pymatgen.io.vasp.outputs import Wavecar
 
 
+__version__ = '0.0.2'
+
+
 @click.command()
 @click.option('-i', '--input_file', default='WAVECAR',
               type=click.Path(exists=True, dir_okay=False),
