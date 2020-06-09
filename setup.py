@@ -1,7 +1,7 @@
 from setuptools import setup, find_packages
 
 
-VERSION = '0.0.1'
+VERSION = '0.0.2'
 
 with open('README.md', 'r') as f:
     long_desc = f.read()
@@ -16,6 +16,7 @@ setup(
     long_description_content_type='text/markdown',
     url='https://github.com/mturiansky/wavecar2unk',
     packages=find_packages(),
+    py_modules=['wavecar2unk'],
     install_requires=['pymatgen > 2020.4.29', 'click >= 7.1.2'],
     keywords=[
         'physics', 'materials', 'science', 'VASP', 'WAVECAR', 'wannier90'
